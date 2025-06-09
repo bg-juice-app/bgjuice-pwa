@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffa500"/>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <title>BG Juice App</title>
+</head>
+<body>
+  <main>
+    <img src="bgjuice-logo.png" alt="BG Juice Logo" class="logo" />
+    <h1>BG JUICE</h1>
+    <form id="loyalty-form">
+      <input type="text" id="client-name" placeholder="Nom du client" required />
+      <input type="text" id="client-phone" placeholder="Numéro du client" required />
+      <select id="juice-type">
+        <option value="zonkoum-1l">1L Zonkoum - 1000F</option>
+        <option value="zonkoum-0.5l">0.5L Zonkoum - 500F</option>
+        <option value="gingembre-1l">1L Gingembre - 1500F</option>
+        <option value="gingembre-0.5l">0.5L Gingembre - 800F</option>
+      </select>
+      <button type="submit">Ajouter Vente</button>
+    </form>
+
+    <section id="client-list">
+      <h2>Clients & Points</h2>
+      <ul id="clients-data"></ul>
+    </section>
+
+    <footer>
+      <p>Contact WhatsApp : 98715170</p>
+      <p>TikTok : bg.juice4</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('Service Worker enregistré !'));
+    }
+  </script>
+</body>
+</html>

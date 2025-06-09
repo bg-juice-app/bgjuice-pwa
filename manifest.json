@@ -1,0 +1,21 @@
+
+{
+  "name": "BG Juice App",
+  "short_name": "BGJuice",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fffaf0",
+  "theme_color": "#ffa500",
+  "icons": [
+    {
+      "src": "bgjuice-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "bgjuice-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
